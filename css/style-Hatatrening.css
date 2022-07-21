@@ -1,0 +1,317 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    cursor: url('cursor.cur'), auto;
+}
+
+.wrapper {
+   
+    padding: 15px 0;
+    background-color: #1f1f56;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+
+} 
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.header ul {
+
+    margin: 0 -14px;
+    padding-left: 0;
+    list-style: none;
+    
+}
+
+.header  li {
+   
+    display: inline-block;
+    margin: 0 14px;  
+}
+
+.afisha li:hover a, .contacts li:hover a {
+    color: #fd8300;
+}
+
+
+.afisha a {
+    transition: all .5s ease;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    text-decoration: none;
+} 
+
+
+
+.contacts {
+    padding: 10px 0;
+   
+}
+
+.contacts ul {
+    list-style: none;
+}
+
+.contacts li {
+    margin: 10px 0;
+}
+
+.contacts a {
+    transition: all .5s ease;   
+    color: #25252c;
+    text-decoration: none;
+}
+
+.namber a {
+    font:bold 18px/24px Arial;
+    
+    
+}
+
+.internet a.mail  {
+    text-decoration: underline;
+}
+
+
+
+.call a {
+    padding: 12px 28px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    transition: all 1s ease;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+    display: inline-block;
+   
+}
+
+.call a:hover {
+    cursor: url('cursor2.cur'), auto;
+    background-color: #dcdce6;;
+    color: #fd8300;
+    border: 2px solid #1f1f56;
+
+}
+
+.sentence {
+    padding: 25px 0;
+    color: #fff;
+    text-align: center;
+    background: url(../img/background.jpg) center/cover;
+    background-size: cover;
+    background-color: #25252c;
+  }
+
+.month {
+    margin-bottom: 6px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.choice {
+    margin-bottom: 8px;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 24px;
+  
+    }
+
+.price {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+   
+}   
+
+.price span {
+    margin-top: 8px;
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+    
+    
+}
+
+
+.main h1 {
+    font-size: 30px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+}
+
+.about-company {
+    
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    max-width: 670px;
+}
+
+.details {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+
+}
+
+.project {
+    display: block;
+    justify-content: space-between;
+    max-width: 710px;
+}
+
+.popular-projects > a {
+    
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+}
+
+.house a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1f1f56;
+    font-weight: bold;
+}
+
+.logo {
+    padding-right: 30px;
+}
+
+
+.main-hause-edmonton a {
+    
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+}
+
+.main-hause-montreal a {
+    
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+}
+
+.main-hause-calgary a {
+    
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+}
+
+
+.menu p.categories {
+    margin-bottom: 0;
+    padding: 11px 16px; 
+    border-radius: 3px 3px 0 0 ;
+    background-color: #1f1f56;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    
+}
+
+
+.menu ul {
+    
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu a {
+    
+    background-color: #e4e4ec;
+    border: 1px solid #666;
+    color: #25252c;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 11px 16px;
+    text-decoration: none;
+}
+
+.addition-fon {
+    padding: 19px;
+    background-color: #ededf5;
+    align-items: start;
+}
+
+.addition {
+    font-size: 14px;
+    line-height: 26px;
+    
+}
+
+.addition ul {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.addition a, li{
+    
+    transition: all .5s ease;  
+    text-decoration: none;
+    color: #666;
+}
+
+.telephone a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #25252c;
+    font-weight: bold;
+}
+
+.internet a {
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+}
+
+.addition a:hover {
+    color: #fd8300;
+    text-decoration: underline;
+}
+
+.footer {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    padding: 11px;
+    display: flex;
+    background-color: #dcdce6;
+    justify-content: center;
+
+}

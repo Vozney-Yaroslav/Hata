@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.header {
+    padding: 15.5px 0px;
+    background-color: #1f1f56;
+}
+
+.header ul {
+    margin: 0 -14px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.header li {
+    display: inline-block;
+    margin: 0 14px;
+}
+
+
+
+
+
+.menu a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #b1b1d2;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.menu a:hover {
+    color: #fd8300;
+}
+
+.contact-info {
+    padding: 20px 0;
+}
+
+.phones p,
+.messengers p {
+    margin: 10px 0;
+}
+
+.phones a {
+    font:bold 18px/24px Arial;
+    color: #25252c;
+    text-decoration: none;
+}
+
+
+.messengers a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
+    
+}
+
+.skype {
+    text-decoration: none;
+}
+
+.cta a {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    font-family: "Arial";
+    color: #25252c;
+    text-decoration: none;
+    border: 2px solid #fd8300;
+    border-radius: 25px;
+    transition: all .25s ease;
+}
+
+.cta a:hover {
+    background-color: #fd8300;
+    color: #fff;
+
+}
+
+.proposition {
+    background: #0d0805 url(../img/background.jpg) center/cover;
+}
+
+.proposition p {
+    margin: 0;
+}
