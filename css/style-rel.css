@@ -10,9 +10,17 @@ body {
     max-width: 960px;
 }
 
-.flex-between {
+.row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    row-gap: 28px;
+}
+
+.column {
+    min-width: 219px;
+    box-sizing: border-box;
 }
 
 .aic {
@@ -35,10 +43,6 @@ body {
     margin: 0 14px;
 }
 
-
-
-
-
 .menu a {
     font-size: 14px;
     letter-spacing: 2px;
@@ -55,6 +59,12 @@ body {
 .contact-info {
     padding: 20px 0;
 }
+
+.phones,
+.messengers {
+    padding-left: 48px;
+}
+
 
 .phones p,
 .messengers p {
@@ -100,6 +110,8 @@ body {
 }
 
 .proposition {
+    color: #fff;
+    text-align: center;
     background: #0d0805 url(../img/background.jpg) center/cover;
 }
 

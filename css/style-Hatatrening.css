@@ -16,10 +16,15 @@ body {
 
 } 
 
-.flex {
+.row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 28px;
+    row-gap: 28px;
 }
+
+
 
 .aic {
     align-items: center;
@@ -175,11 +180,7 @@ body {
 
 }
 
-.project {
-    display: block;
-    justify-content: space-between;
-    max-width: 710px;
-}
+
 
 .popular-projects > a {
     
@@ -190,22 +191,37 @@ body {
     font-weight: 700;
 }
 
-.house a {
-    text-decoration: none;
+
+.house p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    
+}
+
+
+
+.house h3 {
     font-size: 14px;
     line-height: 24px;
     color: #1f1f56;
     font-weight: bold;
+    transition: all .25s ease;
 }
 
-.logo {
-    padding-right: 30px;
+.house h3:hover {
+    text-decoration: underline 2px;
 }
 
+h3 sup { 
+    display: inline-block;
+    text-decoration: none; 
+}
 
 .main-hause-edmonton a {
     
-    text-decoration: none;
+   
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
@@ -213,7 +229,7 @@ body {
 
 .main-hause-montreal a {
     
-    text-decoration: none;
+    
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
@@ -221,11 +237,14 @@ body {
 
 .main-hause-calgary a {
     
-    text-decoration: none;
+   
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
 }
+
+
+
 
 
 .menu p.categories {
@@ -252,13 +271,18 @@ body {
 .menu a {
     
     background-color: #e4e4ec;
-    border: 1px solid #666;
+    border-top: 1px solid #cdcddd;
     color: #25252c;
     display: block;
     font-size: 14px;
     line-height: 24px;
     padding: 11px 16px;
     text-decoration: none;
+}
+
+.menu a:hover {
+    color: #fff;
+    background-color: #fd8300;
 }
 
 .addition-fon {
