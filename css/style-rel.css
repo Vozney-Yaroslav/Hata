@@ -3,11 +3,25 @@ body {
     font-family: Arial, sans-serif;
 }
 
+sup {
+    font-size: 0.5em;
+}
 
+hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #e4e4ec;;
+}
 
 .wrapper {
     margin: 0 auto;
     max-width: 960px;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .row {
@@ -19,7 +33,7 @@ body {
 }
 
 .column {
-    min-width: 219px;
+    width: 219px;
     box-sizing: border-box;
 }
 
@@ -89,6 +103,11 @@ body {
     text-decoration: none;
 }
 
+.cta {
+    text-align: right;
+}
+
+
 .cta a {
     display: inline-block;
     padding: 12px 30px;
@@ -113,8 +132,182 @@ body {
     color: #fff;
     text-align: center;
     background: #0d0805 url(../img/background.jpg) center/cover;
+    padding: 55px 0 35px;
 }
 
 .proposition p {
     margin: 0;
+    
+}
+
+.prop-title {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font: 700 30px "Roboto Slab";
+}
+
+p.prop-text {
+    color: #fff;
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 24px;
+    
+}
+
+p.prop-cost {
+    font-size: 24px;
+    
+    color: #fd8300;
+    font-weight: bold;
+    
+}
+.prop-cost span {
+    font-size: 40px;
+}
+
+.main {
+    padding: 35px 0 45px;
+}
+
+.main-info {
+    max-width: 713px;
+}
+
+.main-info h1,
+.main-info h2 {
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+
+
+.main-info h1 {
+    padding-top: 5px;   
+    font-size: 30px;
+
+
+}
+
+.main-info h2 {
+    font-size: 24px;
+}
+
+.main-info a {
+    font-size: 14px;
+    line-height: 24px;
+    
+    color: #fd8300;
+    font-weight: bold;
+
+}
+
+.main-info a:hover {
+    text-decoration: none;
+    
+}
+
+
+
+.content p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    
+}
+.home {
+    margin: 0;
+}
+
+.home h3 {
+    margin: 5px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #1f1f56;
+      
+}
+
+.home h3 span {
+    text-transform: lowercase;
+}
+.home p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+
+.aside-menu p {
+    margin: 0;
+    padding: 10px 15px;
+    color: #fff;
+    font: 700 16px/1.5em "Roboto Slab";
+    border-radius: 3px 3px 0 0;
+    background-color: #1f1f56;
+}
+
+.aside-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.aside-menu a {
+    display: block;
+    padding: 10px 15px;
+    background-color: #e4e4ec;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #25252c;
+    border-top: 1px solid #cdcddd;
+    
+}
+
+
+.sub-menu a {
+    padding-left: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+
+}
+
+.footer {
+    padding: 30px 0 20px;
+    background-color: #ededf5;
+}
+
+.footer-menu  {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+}
+
+.footer-menu a:hover {
+    text-decoration: underline;
+    color: #fd8300;
+}
+
+
+.copy {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    font-family: "Arial";
+    text-align: center;
+    background-color: #dcdce6;
+}
+
+.copy p {
+    margin: 0;
+    padding: 13px 0;
 }
