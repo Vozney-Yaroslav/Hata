@@ -69,10 +69,14 @@ hr {
 } 
 
 
-.afisha li:hover a, .contacts li:hover a {
+.afisha li:hover a, 
+.contacts li:hover a {
     color: #fd8300;
 }
 
+.social li:hover img {
+    background-color: #fd8300;;
+}
 
 .contacts {
     padding: 10px 0;
@@ -282,7 +286,7 @@ aside {
 }
 
 .menu a:hover {
-    border-top: 0 solid #cdcddd;
+    border-top: 1px solid #fd8300;
     color: #fff;
     background-color: #fd8300;
 }
@@ -295,6 +299,7 @@ aside {
 }
 
 .sub-menu a:hover {
+    border-top: 1px solid #cecedd;
     background-color: #cecedd;
     color: #666;
 }
