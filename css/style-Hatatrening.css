@@ -35,7 +35,10 @@ hr {
     row-gap: 28px;
 }
 
-
+.column {
+    width: 219px;
+    box-sizing: border-box;
+}
 
 .aic {
     align-items: center;
@@ -55,20 +58,20 @@ hr {
     margin: 0 14px;  
 }
 
-.afisha li:hover a, .contacts li:hover a {
-    color: #fd8300;
-}
-
 
 .afisha a {
-    transition: all .5s ease;
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #b1b1d2;
     text-decoration: none;
+    transition: all .5s ease;
 } 
 
+
+.afisha li:hover a, .contacts li:hover a {
+    color: #fd8300;
+}
 
 
 .contacts {
@@ -81,7 +84,7 @@ hr {
 }
 
 .contacts li {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .contacts a {
@@ -92,17 +95,23 @@ hr {
 
 .namber a {
     font:bold 18px/24px Arial;
-    
-    
+      
 }
 
+
 .internet a.mail  {
+    font-size: 16px;
+    line-height: 24px;
+    color: #25252c;
     text-decoration: underline;
 }
 
-
+.call {
+    text-align: right;
+}
 
 .call a {
+    display: inline-block;
     padding: 12px 28px;
     font-size: 16px;
     line-height: 24px;
@@ -110,7 +119,6 @@ hr {
     transition: all 1s ease;
     border-radius: 25px;
     border: 2px solid #fd8300;
-    display: inline-block;
    
 }
 
@@ -126,9 +134,7 @@ hr {
     padding: 55px 0 35px;
     color: #fff;
     text-align: center;
-    background: url(../img/background.jpg) center/cover;
-    background-size: cover;
-    background-color: #25252c;
+    background: #0d0805 url(../img/background.jpg) center/cover;   
   }
 
   .sentence p {
@@ -137,11 +143,9 @@ hr {
 
 
 .month {
-    font-size: 30px;
     letter-spacing: 2px;
-    font-weight: 700;
     text-transform: uppercase;
-    font-family: "Roboto Slab";
+    font:700 30px "Roboto Slab";
 }
 
 p.choice {
@@ -162,15 +166,25 @@ p.choice {
     font-size: 40px;     
 }
 
-.main h1 {
-    font-size: 30px;
-    
-    color: #24242b;
-    font-weight: 700;
+.main {
+    padding: 35px 0 45px;
 }
 
-.about-company {
-    margin-top: 42px;
+
+.main h1,
+.main h2 {
+    color: #24242b;
+    font-family: "Roboto Slab";
+}
+.main h1 {
+    font-size: 30px;
+}
+
+.main h2 {
+    font-size: 24px;
+}
+
+.about-company p {
     font-size: 14px;
     line-height: 24px;
     color: #666;
@@ -180,7 +194,6 @@ p.choice {
 .details {
     font-size: 14px;
     line-height: 24px;
-    text-decoration: underline;
     color: #fd8300;
     font-weight: bold;
     transition: all .5s ease;
@@ -191,21 +204,6 @@ p.choice {
     background-color: #fd8300;
     text-decoration: none;
     border: #666 1px solid;
-}
-
-.popular-projects h2 {
-    text-decoration: none;
-    font-size: 24px;
-    color: #24242b;
-    font-weight: 700;
-}
-
-.house p {
-    margin: 0;
-    font-size: 13px;
-    line-height: 18px;
-    color: #9999a6;
-    
 }
 
 .house h3 {
@@ -226,23 +224,34 @@ h3 sup {
     text-decoration: none; 
 }
 
-.main-hause  {
+.house {
+    margin: 0;
+}
+
+
+.house p {
+    margin: 0;
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;
-    margin-bottom: 46px;
+    
+}
+
+aside {
+    position: sticky;
+    top: 35px;
+
 }
 
 
 .menu-table {
-    min-width: 219px;
-    margin-top: 36px;
+    
+    
     border-radius: 3px;
     overflow: hidden;
 }
 
-
-.menu p.categories {
+.menu p {
     margin: 0;
     padding: 11px 16px; 
     background-color: #1f1f56;
@@ -262,14 +271,14 @@ h3 sup {
 
 .menu a {
     
-    background-color: #e4e4ec;
-    padding: 11px 16px;
-    border-top: 1px solid #cdcddd;
-    color: #25252c;
     display: block;
+    padding: 11px 16px;
+    background-color: #e4e4ec;
+    text-decoration: none;
     font-size: 14px;
     line-height: 24px;
-    text-decoration: none;
+    color: #25252c;
+    border-top: 1px solid #cdcddd;
 }
 
 .menu a:hover {
@@ -290,48 +299,46 @@ h3 sup {
     color: #666;
 }
 
-
-
-
-
 .addition-fon {
-    padding: 19px;
+    padding: 30px 0 20px;
     background-color: #ededf5;
-    align-items: start;
-}
-
-.addition {
-    font-size: 14px;
-    line-height: 26px;
     
 }
 
-.addition ul {
+.hous-mein  {
     list-style: none;
     padding-left: 0;
-    padding-right: 20px;
+    margin: 10px 0;
+    
+    
 }
 
-.addition a, li{
-    
+.addition a{
+    font-size: 14px;
+    line-height: 26px;
     transition: all .5s ease;  
     text-decoration: none;
     color: #666;
 }
 
-.telephone a {
-    margin: 10px 0;
+.namber a {
+    
     font-size: 18px;
     line-height: 24px;
     color: #25252c;
-    font-weight: bold;
+    
 }
 
 .internet a {
-    margin-right: 16px;
+    
+    
     font-size: 16px;
     line-height: 24px;
     color: #25252c;
+}
+.namber p,
+.internet p {
+    margin: 10px 0;
 }
 
 .addition a:hover {
@@ -339,7 +346,7 @@ h3 sup {
     text-decoration: underline;
 }
 
-.footer {
+.copy {
     font-size: 13px;
     line-height: 18px;
     color: #9999a6;

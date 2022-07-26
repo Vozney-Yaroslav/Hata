@@ -114,7 +114,6 @@ hr {
     font-size: 16px;
     line-height: 24px;
     font-weight: bold;
-    font-family: "Arial";
     color: #25252c;
     text-decoration: none;
     border: 2px solid #fd8300;
@@ -129,10 +128,10 @@ hr {
 }
 
 .proposition {
+    padding: 55px 0 35px;
     color: #fff;
     text-align: center;
     background: #0d0805 url(../img/background.jpg) center/cover;
-    padding: 55px 0 35px;
 }
 
 .proposition p {
@@ -195,7 +194,6 @@ p.prop-cost {
 .main-info a {
     font-size: 14px;
     line-height: 24px;
-    
     color: #fd8300;
     font-weight: bold;
 
@@ -237,6 +235,14 @@ p.prop-cost {
     color: #9999a6;
     font-family: "Arial";
 }
+
+.aside-menu {
+    position: sticky;
+    top: 35px;
+    
+
+}
+
 
 .aside-menu p {
     margin: 0;
