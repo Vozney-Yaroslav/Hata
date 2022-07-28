@@ -74,8 +74,43 @@ hr {
     color: #fd8300;
 }
 
-.social li:hover img {
-    background-color: #fd8300;;
+
+
+.social a {
+    display: block;
+    background: url(../img/sprite.png) no-repeat;
+    transition: all .5s ease;
+}
+
+a.fb {
+    width: 10px;
+    height: 19px;
+    background-position: 0 0;
+
+}
+
+a.tw {
+    height: 15px;
+    width: 18px;
+    background-position: -12px -2px;
+}
+
+a.in {
+    height: 19px;
+    width: 19px;
+    background-position: -32px 0;
+}
+
+a.fb:hover {
+    background-position: 0 -24px;
+}
+
+a.tw:hover {
+    background-position: -13px -26px;
+}
+
+a.in:hover {
+    background-position: -33px -24px;
 }
 
 .contacts {
@@ -92,14 +127,44 @@ hr {
 }
 
 .contacts a {
+    position: relative;
     transition: all .5s ease;   
     color: #25252c;
     text-decoration: none;
 }
 
+.logos:before {
+    content: "";
+    position: absolute;
+    left: -28px;
+    top: 2px;
+}
+
+
 .namber a {
+    
     font:bold 18px/24px Arial;
       
+}
+
+.tel:before {
+    width: 16px;
+    height: 17px;
+    background: url(../img/sprite.png) no-repeat -53px 0;
+
+}
+
+.mail::before {
+    width: 17px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat -91px -2px;
+}
+
+.skype::before {
+    width: 19px;
+    height: 19px;
+    top: -2px;
+    background: url(../img/sprite.png) no-repeat -71px 0;
 }
 
 
@@ -319,6 +384,7 @@ aside {
 }
 
 .addition a{
+    position: relative;
     font-size: 14px;
     line-height: 26px;
     transition: all .5s ease;  
@@ -343,6 +409,7 @@ aside {
 }
 .namber p,
 .internet p {
+    padding-left: 30px;
     margin: 10px 0;
 }
 
