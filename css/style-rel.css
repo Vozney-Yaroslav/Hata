@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -134,19 +148,46 @@ a.fb {
     text-decoration: none;
 }
 
-.logos
-
-
-
-.tel:before {
+.icon::before {
     content: "";
     position: absolute;
     left: -28px;
     top: 2px;
+}
+
+.stick {
+    position: relative;
+}
+.stick::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: -18px;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
+}
+
+
+.tel:before {
+    
     width: 16px;
     height: 17px;
     background: url(../img/sprite.png) no-repeat -53px 0;
 
+}
+
+.mail::before {
+    width: 17px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat -91px -2px;
+}
+
+.skype::before {
+    width: 19px;
+    height: 19px;
+    top: -2px;
+    background: url(../img/sprite.png) no-repeat -71px 0;
 }
 
 .messengers a {
@@ -270,7 +311,14 @@ p.prop-cost {
     
 }
 .home {
+    position: relative;
     margin: 0;
+}
+
+.home a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .home h3 {
@@ -279,7 +327,10 @@ p.prop-cost {
     line-height: 24px;
     text-transform: uppercase;
     color: #1f1f56;
-      
+}
+
+.home a:hover ~ h3 {
+    text-decoration: underline;
 }
 
 .home h3 span {
@@ -293,7 +344,17 @@ p.prop-cost {
     font-family: "Arial";
 }
 
+.sidebar {
+    min-width: 219px;
+
+
+
+}
+
+
 .aside-menu {
+    border-radius: 3px;
+    overflow: hidden;
     position: sticky;
     top: 35px;
     
@@ -306,7 +367,7 @@ p.prop-cost {
     padding: 10px 15px;
     color: #fff;
     font: 700 16px/1.5em "Roboto Slab";
-    border-radius: 3px 3px 0 0;
+    
     background-color: #1f1f56;
 }
 
@@ -324,17 +385,58 @@ p.prop-cost {
     font-size: 14px;
     line-height: 24px;
     color: #25252c;
-    border-top: 1px solid #cdcddd;
+   
     
 }
 
+.aside-menu > ul >li + li > a {
+    border-top: 1px solid #cdcddd;
+
+}
+
+.aside-menu >ul > li >a::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 15px;  
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    transition: all .5s ease;
+}
+
+.aside-menu >ul > li:hover >a::before {
+    top: 16px;
+    border-color: #fff;
+    transform: rotate(45deg);
+}
+
+.aside-menu li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+}
+
+
+
+.aside-menu > ul > li:hover > a {
+    
+    color: #fff;
+    background-color: #fd8300;
+}
 
 .sub-menu a {
     padding-left: 30px;
-    font-size: 14px;
-    line-height: 24px;
     color: #666;
 
+}
+
+.sub-menu a:hover {
+    background-color: #cecedd;
 }
 
 .footer {
