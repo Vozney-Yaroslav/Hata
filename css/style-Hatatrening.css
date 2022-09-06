@@ -218,7 +218,7 @@ a.in:hover {
     transition: all .5s ease;
     border-radius: 25px;
     border: 2px solid #fd8300;
-   
+    box-shadow: 0 5px 5px 0 #fd8300;;
 }
 
 .call a:hover {
@@ -283,26 +283,29 @@ p.choice {
     font-size: 24px;
 }
 
+.about-company {
+    max-width: 670px;
+
+}
+
+
 .about-company p {
     font-size: 14px;
     line-height: 24px;
     color: #666;
-    max-width: 670px;
 }
 
 .details {
     font-size: 14px;
-    line-height: 24px;
     color: #fd8300;
     font-weight: bold;
     transition: all .5s ease;
 }
 
 .details:hover {
-    color: #24242b;
-    background-color: #fd8300;
+    
     text-decoration: none;
-    border: #666 1px solid;
+    
 }
 
 .house h3 {
@@ -499,13 +502,68 @@ h3 sup {
     display: flex;
     background-color: #dcdce6;
     justify-content: center;
-
 }
 
 .services p {
-    margin: 0;
     font-size: 14px;
     line-height: 24px;
+    color: #666666
+}
+
+.table-price {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.table-price thead {
+    color: #fff;
+    background-color: #1f1f56;
+}    
+
+.table-price th {
+    padding: 13px 20px;
+    text-align: left;
+    font: 14px "Roboto Slab";
+}
+
+.table-price th:last-child,
+.table-price tbody td:last-child
+ {
+    text-align: right;
+}
+
+.table-price tbody {
     color: #666666;
+    background-color: #e4e4ec;
+}
+
+.table-price tbody td {
+    padding: 13px 20px;
+    font-family: "Arial";
     
 }
+
+.table-price tbody tr:not(:last-child) {
+    box-shadow: inset 0px -1px 0px #cecedd;
+    
+}
+
+.table-price tbody td {
+    font-size: 14px;
+    color: #666;
+    
+}
+
+.table-price tbody tr:hover td {
+    background-color: #fd8300;   
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.head-shadow {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+

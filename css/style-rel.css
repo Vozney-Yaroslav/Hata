@@ -61,6 +61,11 @@ a {
     align-items: center;
 }
 
+.header-shadow {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+
 .header {
     padding: 15.5px 0px;
     background-color: #1f1f56;
@@ -129,6 +134,7 @@ a.fb {
 
 .contact-info {
     padding: 20px 0;
+    
 }
 
 .phones,
@@ -267,7 +273,7 @@ p.prop-cost {
     padding: 35px 0 45px;
 }
 
-.main-info {
+.main-with-aside {
     max-width: 713px;
 }
 
@@ -301,8 +307,6 @@ p.prop-cost {
     text-decoration: none;
     
 }
-
-
 
 .content p {
     font-size: 14px;
@@ -346,28 +350,20 @@ p.prop-cost {
 
 .sidebar {
     min-width: 219px;
-
-
-
 }
-
 
 .aside-menu {
     border-radius: 3px;
     overflow: hidden;
     position: sticky;
     top: 35px;
-    
-
 }
-
 
 .aside-menu p {
     margin: 0;
     padding: 10px 15px;
     color: #fff;
     font: 700 16px/1.5em "Roboto Slab";
-    
     background-color: #1f1f56;
 }
 
@@ -384,14 +380,11 @@ p.prop-cost {
     text-decoration: none;
     font-size: 14px;
     line-height: 24px;
-    color: #25252c;
-   
-    
+    color: #25252c;   
 }
 
 .aside-menu > ul >li + li > a {
     border-top: 1px solid #cdcddd;
-
 }
 
 .aside-menu >ul > li >a::before {
@@ -421,10 +414,7 @@ p.prop-cost {
     display: none;
 }
 
-
-
 .aside-menu > ul > li:hover > a {
-    
     color: #fff;
     background-color: #fd8300;
 }
@@ -432,7 +422,6 @@ p.prop-cost {
 .sub-menu a {
     padding-left: 30px;
     color: #666;
-
 }
 
 .sub-menu a:hover {
@@ -476,3 +465,48 @@ p.prop-cost {
     margin: 0;
     padding: 13px 0;
 }
+
+.table-wrap {
+
+}
+
+.table-wrap table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.table-wrap thead {
+    background-color: #1f1f56;
+    color: #ffffff;
+}
+
+.table-wrap th {
+    text-align: left;
+    padding: 13px 20px;
+    font: 14px "Roboto Slab";
+}
+
+.table-wrap th:last-child,
+.table-wrap td:last-child {
+    text-align: right;
+}
+
+.table-wrap td {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    background-color: #e4e4ec;
+}
+
+.table-wrap tbody tr+tr {
+    border-top: 1px solid #cdcddd;
+}
+
+.table-wrap tbody tr:hover td {
+    background-color: #fd8300;
+    color: #fff;
+    cursor: pointer;
+}
+
