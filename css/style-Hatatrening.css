@@ -309,9 +309,7 @@ p.choice {
 }
 
 .content a:hover {
-    
     text-decoration: none;
-    
 }
 
 .house h3 {
@@ -584,11 +582,39 @@ h3 sup {
     font-size: 24px;
 }
 
+.contacts-office {
+    display: flex;
+
+}
+
+.contacts-office h4 {
+    margin-bottom: 12px;
+}
+
+.contacts-office h5 {
+    margin: 6px 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666;
+    font-family: "Arial";
+}
+
+.contacts-office p {
+    margin: 6px 0;
+}
+
+
 .contacts-office a {
     text-decoration: none;
 }
 
+.office {
+    margin-right: 88px;
+}
 
+.advice {
+    margin-right: 162px;
+}
 
 .maps iframe {
     
